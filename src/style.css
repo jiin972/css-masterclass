@@ -2,8 +2,8 @@
   height: 100vh;
   display: flex;
   gap: 20px;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
 }
 
