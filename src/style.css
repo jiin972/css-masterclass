@@ -1,7 +1,19 @@
-body {
-  background-color: #cf4647;
+.father-container {
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #cf4647;
   color: whitesmoke;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
