@@ -1,14 +1,11 @@
 .father-container {
   height: 100vh;
   display: flex;
-  gap: 20px;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .box {
-  width: 200px;
   height: 200px;
   background-color: #cf4647;
   color: whitesmoke;
@@ -16,4 +13,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box:first-child {
+  background-color: #cf4647;
+  flex-grow: 0;
+}
+
+.box:last-child {
+  background-color: teal;
+  flex-grow: 0;
 }
