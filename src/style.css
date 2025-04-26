@@ -1,11 +1,14 @@
 .father-container {
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  gap: 20px;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .box {
+  width: 200px;
   height: 200px;
   background-color: #cf4647;
   color: whitesmoke;
@@ -13,22 +16,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.box:first-child {
-  background-color: #cf4647;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.box:nth-child(2) {
-  background-color: orange;
-  flex-grow: 2;
-  flex-shrink: 0;
-}
-
-.box:last-child {
-  background-color: teal;
-  flex-grow: 1;
-  flex-shrink: 0;
 }
