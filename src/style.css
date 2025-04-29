@@ -1,26 +1,30 @@
-.father-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.father{
+  display: grid;
+  grid-template-columns: [melon] 100px [potato] 200px  [peach] 100px [banana];
+  grid-template-rows: [bicycle] 200px [truck] 100px [bus];
+  column-gap: 20px;
+  row-gap: 10px;
 }
 
-.box {
-  height: 200px;
-  background-color: #cf4647;
-  color: whitesmoke;
-  font-size: 36px;
+.child{
+  background-color: tomato;
   display: flex;
+  color: whitesmoke;
+  font-size: 30px ;
   justify-content: center;
   align-items: center;
 }
 
-.box:first-child {
-  background-color: #cf4647;
-  flex-grow: 0;
+.child:last-child{
+  background-color: aqua;
+  /* grid-column-start: 2;
+  grid-column-end: -1; */
+  grid-column: potato / banana;
 }
 
-.box:last-child {
-  background-color: teal;
-  flex-grow: 0;
+.child:first-child{
+  background-color: seagreen;
+  /* grid-row-start: 1;
+  grid-row-end: -1; */
+  grid-row: bicycle / bus;
 }
