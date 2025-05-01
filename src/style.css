@@ -1,31 +1,18 @@
 .father {
   display: grid;
-  height: 50vh;
+  height: 100vh;
   gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-columns: 1fr;
-  grid-auto-flow: column;
-  /* justify-items: stretch;
-  align-items: stretch; */
-  place-items: end center;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  background-color: lightblue;
+  place-content: center center;
 }
 
 .child {
-  width: 50px;
-  height: 50px;
   background-color: tomato;
   display: flex;
   color: antiquewhite;
   font-size: 40px;
   justify-content: center;
   align-items: center;
-}
-
-.child:nth-child(6) {
-  background-color: blueviolet;
-  /* align-self: center;
-  justify-self: end; */
-  place-self: center;
-  grid-column: span 2;
 }
